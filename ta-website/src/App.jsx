@@ -15,6 +15,7 @@ import DownloadApp   from './pages/DownloadApp';
 import PrivacyPolicy from './pages/PrivacyPolicy';
 import TermsPage     from './pages/TermsPage';
 import CookiePolicy  from './pages/CookiePolicy';
+import DeleteAccount from './pages/DeleteAccount';
 
 function ScrollToTop() {
   const { pathname } = useLocation();
@@ -41,7 +42,7 @@ export default function App() {
           <Route path="/privacy-policy"     element={<PrivacyPolicy />} />
           <Route path="/terms-and-conditions" element={<TermsPage />} />
           <Route path="/cookie-policy"      element={<CookiePolicy />} />
-        </Routes>
+<Route path="/delete-account" element={<DeleteAccount />} />        </Routes>   
       </main>
       <Footer />
     </>
