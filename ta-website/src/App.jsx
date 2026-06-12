@@ -15,7 +15,7 @@ import DownloadApp   from './pages/DownloadApp';
 import PrivacyPolicy from './pages/PrivacyPolicy';
 import TermsPage     from './pages/TermsPage';
 import CookiePolicy  from './pages/CookiePolicy';
-import DeleteAccount from './pages/DeleteAccount';
+import DeleteAccount from './pages/Deleteccount';
 
 function ScrollToTop() {
   const { pathname } = useLocation();
