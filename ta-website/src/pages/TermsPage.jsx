@@ -23,7 +23,7 @@ const SECTIONS = [
   { title: '9. Limitation of Liability',  content: "TeacherAttendance's liability is limited to the amount paid by the school in the 12 months preceding the claim. We are not liable for indirect, consequential, or punitive damages." },
   { title: '10. Governing Law',           content: 'These Terms are governed by the laws of Kenya. Any disputes shall be subject to the exclusive jurisdiction of Kenyan courts.' },
   { title: '11. Changes to Terms',        content: 'We may update these Terms at any time. We will notify users of material changes 14 days before they take effect. Continued use constitutes acceptance.' },
-  { title: '12. Contact',                 content: 'For terms-related questions: support@teacherattendance.com' },
+  { title: '12. Contact',                 content: 'For terms-related questions: info@teacherattendance.com' },
 ];
 
 function renderContent(content) {

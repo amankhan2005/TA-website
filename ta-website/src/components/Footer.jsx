@@ -35,7 +35,7 @@ const COLS = {
 const SOCIALS = [
   { label: '𝕏',  href: '#',                                    aria: 'Twitter / X'  },
   { label: 'in', href: '#',                                    aria: 'LinkedIn'      },
-  { label: '@',  href: 'mailto:support@teacherattendance.com', aria: 'Email support' },
+  { label: '@',  href: 'mailto:info@teacherattendance.com', aria: 'Email support' },
 ];
 
 export default function Footer() {
@@ -265,8 +265,8 @@ export default function Footer() {
             </p>
 
             <div className="footer__bottom-right">
-              <a href="mailto:support@teacherattendance.com" className="footer__email">
-                support@teacherattendance.com
+              <a href="mailto:info@teacherattendance.com" className="footer__email">
+                info@teacherattendance.com
               </a>
               <span className="footer__credit-dot" />
               <span className="footer__credit">

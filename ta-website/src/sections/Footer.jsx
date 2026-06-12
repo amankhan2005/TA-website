@@ -33,7 +33,7 @@ export default function Footer() {
             <p className="footer__desc">Smart, secure teacher attendance for modern schools. GPS, WiFi, QR, and selfie verified.</p>
             <p className="footer__tagline">"Every Check-In, Every Day Counts"</p>
             <div className="footer__socials">
-              {[['𝕏','#'],['in','#'],['@','mailto:support@teacherattendance.com']].map(([l,h]) => (
+              {[['𝕏','#'],['in','#'],['@','mailto:info@teacherattendance.com']].map(([l,h]) => (
                 <a key={h} href={h} className="footer__social" aria-label={l}>{l}</a>
               ))}
             </div>
@@ -49,7 +49,7 @@ export default function Footer() {
         </div>
         <div className="footer__bottom">
           <p className="footer__copy">© {new Date().getFullYear()} TeacherAttendance.com · All rights reserved</p>
-          <a href="mailto:support@teacherattendance.com" className="footer__email">support@teacherattendance.com</a>
+          <a href="mailto:info@teacherattendance.com" className="footer__email">info@teacherattendance.com</a>
         </div>
       </div>
     </footer>

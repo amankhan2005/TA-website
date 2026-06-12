@@ -17,7 +17,7 @@ const SECTIONS = [
   { title: '3. How to Control Cookies', content: 'You can control cookies through your browser settings. Note that disabling essential cookies may prevent login and other core features from working correctly.' },
   { title: '4. Local Storage',          content: 'In addition to cookies, we use localStorage to store your theme preference and JWT session tokens on the client side. This is standard practice for React-based web applications.' },
   { title: '5. Updates',                content: 'We may update this Cookie Policy as the platform evolves. Changes will be communicated through the platform or via email.' },
-  { title: '6. Contact',                content: 'Questions about our cookie usage: support@teacherattendance.com' },
+  { title: '6. Contact',                content: 'Questions about our cookie usage: info@teacherattendance.com' },
 ];
 
 function renderContent(content) {

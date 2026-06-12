@@ -23,7 +23,7 @@ export const FAQS = [
   { q: 'Is teacher GPS location continuously tracked?', a: "No. GPS is sampled only at the moment of check-in to confirm the teacher is within the school's configured radius. Location is never stored or tracked beyond that single verification." },
   { q: 'Can multiple schools use the same platform?', a: 'Yes. The platform is fully multi-tenant. Each school has isolated data, its own admin, and its own subscription plan. A Super Admin oversees all schools from one platform dashboard.' },
   { q: 'What happens if a teacher changes device?', a: 'The teacher notifies their school admin, who resets the device session from the dashboard. On next login from the new device, a new device ID is registered automatically.' },
-  { q: 'Is there a trial period?',                 a: 'Request a demo and our team will onboard your school within 48 hours with a full trial. Contact us via the form above or email support@teacherattendance.com.' },
+  { q: 'Is there a trial period?',                 a: 'Request a demo and our team will onboard your school within 48 hours with a full trial. Contact us via the form above or email info@teacherattendance.com.' },
 ];
 
 export function FaqItem({ q, a, index }) {

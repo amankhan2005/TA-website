@@ -63,7 +63,7 @@ The GPS radius is configured by each school administrator and is used only for o
   },
   {
     title: '7. Your Rights',
-    content: `You have the right to access your personal data, request corrections, and request deletion (subject to legal retention requirements). To exercise these rights, contact support@teacherattendance.com. School administrators can delete teacher accounts directly from the dashboard.`
+    content: `You have the right to access your personal data, request corrections, and request deletion (subject to legal retention requirements). To exercise these rights, contact info@teacherattendance.com. School administrators can delete teacher accounts directly from the dashboard.`
   },
   {
     title: '8. Changes to This Policy',
@@ -71,7 +71,7 @@ The GPS radius is configured by each school administrator and is used only for o
   },
   {
     title: '9. Contact',
-    content: `For privacy-related questions, contact us at: support@teacherattendance.com`
+    content: `For privacy-related questions, contact us at: info@teacherattendance.com`
   },
 ];
 
