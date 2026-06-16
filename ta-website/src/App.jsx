@@ -41,7 +41,8 @@ export default function App() {
           <Route path="/privacy-policy"     element={<PrivacyPolicy />} />
           <Route path="/terms-and-conditions" element={<TermsPage />} />
           <Route path="/cookie-policy"      element={<CookiePolicy />} />
-<Route path="/delete-account" element={<DeleteAccount />} />        </Routes>   
+<Route path="/delete-account" element={<DeleteAccount />} />     
+   </Routes>   
       </main>
       <Footer />
     </>
