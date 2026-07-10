@@ -19,15 +19,51 @@ const INTER  = "'Inter', -apple-system, BlinkMacSystemFont, sans-serif";
 const EASE   = [0.22, 1, 0.36, 1];
 
 const FEATURES = [
-  { icon: Wifi,          title: 'WiFi Attendance',        desc: 'SSID and gateway IP verified in real time. Attendance only works inside the school\'s authorized network.' },
-  { icon: MapPin,        title: 'GPS Verification',        desc: 'Haversine GPS radius check (50–1000m configurable). Mock GPS and VPN spoofing detected and blocked.' },
-  { icon: QrCode,        title: 'QR Check-In',             desc: 'Cryptographically unique expiring QR sessions — auto-invalidate after 1–60 minutes. No reuse possible.' },
-  { icon: Camera,        title: 'Selfie Authentication',   desc: 'Live selfie captured on every QR check-in and stored securely. Eliminates proxy attendance completely.' },
-  { icon: Smartphone,    title: 'Device Validation',       desc: 'One teacher, one trusted device. Registered on first login. Suspicious device changes flagged instantly.' },
-  { icon: ClipboardList, title: 'Audit Logs',              desc: '365-day immutable event log for every action with IP tracking and built-in suspicious activity detection.' },
-  { icon: Lock,          title: 'Enterprise Security',     desc: 'bcrypt hashing, JWT auth, rate limiting, helmet.js headers, and role-based access control throughout.' },
-  { icon: Building2,     title: 'Multi-School Management', desc: 'One Super Admin manages unlimited schools with isolated data, settings, and subscription plans.' },
-  { icon: Activity,      title: 'Real-Time Dashboard',     desc: 'Admin dashboard refreshes live. See present, absent, and flagged teachers the moment they mark in.' },
+  {
+    icon: Activity,
+    title: 'RFID Student Attendance',
+    desc: 'Students mark attendance using RFID cards with instant check-in and check-out notifications sent directly to parents.'
+  },
+  {
+    icon: QrCode,
+    title: 'QR & WiFi Teacher Attendance',
+    desc: 'Teachers can securely mark attendance through dynamic QR codes or the school WiFi network.'
+  },
+  {
+    icon: Smartphone,
+    title: 'Parent Communication Portal',
+    desc: 'Send attendance alerts, announcements, notices, circulars, and important updates to parents instantly.'
+  },
+  {
+    icon: ClipboardList,
+    title: 'Student Management',
+    desc: 'Manage admissions, student profiles, academic records, attendance history, and student information from one place.'
+  },
+  {
+    icon: Building2,
+    title: 'Academic Session Management',
+    desc: 'Create academic years, classes, sections, timetables, examinations, and academic workflows effortlessly.'
+  },
+  {
+    icon: Camera,
+    title: 'Inquiry & Admissions',
+    desc: 'Track parent inquiries, admission applications, follow-ups, and enrollment progress from a centralized dashboard.'
+  },
+  {
+    icon: Lock,
+    title: 'Fee Management',
+    desc: 'Generate invoices, collect fees online, track dues, manage payments, and automate fee reminders.'
+  },
+  {
+    icon: Wifi,
+    title: 'Attendance Analytics',
+    desc: 'View school-wide, class-wise, section-wise, teacher-wise, and student-wise attendance reports in real time.'
+  },
+  {
+    icon: MapPin,
+    title: 'Real-Time School Dashboard',
+    desc: 'Monitor students, teachers, attendance, fees, admissions, and school performance through a single dashboard.'
+  }
 ];
 
 /* ── Individual card ── */

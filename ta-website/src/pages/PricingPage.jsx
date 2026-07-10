@@ -91,7 +91,7 @@ export default function PricingPage() {
           color: ${T.dark};
           margin: 0 0 20px;
         }
-        .pr-hero-accent { font-weight: 300; color: ${T.mid}; letter-spacing: -0.02em; }
+        .pr-hero-accent { font-weight: 300; color: ${T.teal}; letter-spacing: -0.02em; }
         .pr-hero-sub {
           font-size: clamp(15px, 1.5vw, 17px);
           line-height: 1.75;
