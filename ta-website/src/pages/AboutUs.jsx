@@ -18,10 +18,10 @@ const EASE   = [0.22, 1, 0.36, 1];
 
 /* ── Data ── */
 const MISSION_ITEMS = [
-  { icon: Target, color: '#6366F1', title: 'Mission', desc: 'Eliminate proxy attendance fraud in African schools through technology that is accurate, affordable, and easy to deploy.' },
-  { icon: Globe,  color: '#0DB9AC', title: 'Vision',  desc: 'Every school in Africa can verify teacher presence with the same precision as enterprise-grade attendance systems.'       },
+  { icon: Target, color: '#6366F1', title: 'Mission', desc: 'Give every African school one complete system for administration, admissions, academics, attendance, students, staff, fees, and reporting.' },
+  { icon: Globe,  color: '#0DB9AC', title: 'Vision',  desc: 'Every school in Africa can run its entire operation with the same precision as enterprise-grade management systems.'       },
   { icon: Heart,  color: '#EC4899', title: 'Values',  desc: 'Data sovereignty, local-first design, honest pricing, and relentless focus on school administrator needs.'              },
-  { icon: Users,  color: '#F59E0B', title: 'Impact',  desc: 'Serving 50+ schools and growing — helping over 1,200 teachers mark accurate, tamper-proof attendance daily.'           },
+  { icon: Users,  color: '#F59E0B', title: 'Impact',  desc: 'Serving 50+ schools and growing — helping administrators run their whole school from one platform daily.'           },
 ];
 
 const TIMELINE = [
@@ -349,7 +349,7 @@ export default function AboutUs() {
             animate={heroInView ? { opacity: 1, y: 0 } : {}}
             transition={{ duration: 0.50, delay: 0.20, ease: EASE }}
           >
-            TeacherAttendance was born out of a real problem — proxy attendance fraud — and built with the infrastructure, pricing, and design that African schools actually need.
+TeacherAttendance began by solving proxy attendance fraud, and grew into a complete 360° school management system — built with the infrastructure, pricing, and design that African schools actually need.
           </motion.p>
 
         </div>

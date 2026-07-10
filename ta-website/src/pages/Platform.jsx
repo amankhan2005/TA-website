@@ -1,7 +1,7 @@
 import { useRef } from 'react';
 import { motion, useInView } from 'framer-motion';
 import { Link } from 'react-router-dom';
-import { Layers, Database, Globe, Server, Cpu, Lock, CheckCircle } from 'lucide-react';
+import { Layers, Database, Globe, Server, Cpu, Lock } from 'lucide-react';
 import FinalCTA from '../sections/FinalCTA';
 
 /* ── Design tokens — shared across all sections ── */
@@ -25,12 +25,6 @@ const STACK = [
   { icon: Lock,     label: 'Resend + JWT',            desc: 'Transactional email + stateless secure authentication.',     color: '#8B5CF6' },
 ];
 
-const TIERS = [
-  { name: 'Starter',    teachers: 'Up to 30 teachers',   price: 'Contact Us', features: ['WiFi Attendance', 'GPS Verification', 'Mobile App', 'Basic Reports'],                                                             popular: false },
-  { name: 'School',     teachers: 'Up to 150 teachers',  price: 'Contact Us', features: ['Everything in Starter', 'QR + Selfie Check-in', 'Advanced Analytics', 'Priority Support'],                                        popular: true  },
-  { name: 'Enterprise', teachers: 'Unlimited teachers',  price: 'Contact Us', features: ['Everything in School', 'Multi-branch support', 'Custom integrations', 'Dedicated account manager'],                                popular: false },
-];
-
 /* ── Stack card ── */
 function StackCard({ s, index }) {
   const ref    = useRef(null);
@@ -51,43 +45,6 @@ function StackCard({ s, index }) {
       </div>
       <h3 className="stack-card__title">{s.label}</h3>
       <p className="stack-card__desc">{s.desc}</p>
-    </motion.div>
-  );
-}
-
-/* ── Pricing card ── */
-function PricingCard({ t, index }) {
-  const ref    = useRef(null);
-  const inView = useInView(ref, { once: true, margin: '-40px 0px' });
-
-  return (
-    <motion.div
-      ref={ref}
-      className={`pricing-card${t.popular ? ' pricing-card--popular' : ''}`}
-      initial={{ opacity: 0, y: 24 }}
-      animate={inView ? { opacity: 1, y: 0 } : {}}
-      transition={{ duration: 0.55, delay: index * 0.10, ease: EASE }}
-    >
-      {t.popular && <div className="pricing-card__pill">Most Popular</div>}
-      <div className="pricing-card__head">
-        <h3 className="pricing-card__name">{t.name}</h3>
-        <span className="pricing-card__teachers">{t.teachers}</span>
-      </div>
-      <div className="pricing-card__price">{t.price}</div>
-      <ul className="pricing-card__features">
-        {t.features.map(f => (
-          <li key={f}>
-            <CheckCircle size={13} strokeWidth={2} style={{ color: T.teal, flexShrink: 0, marginTop: 2 }} />
-            {f}
-          </li>
-        ))}
-      </ul>
-      <Link
-        to="/request-demo"
-        className={`pricing-card__cta${t.popular ? ' pricing-card__cta--primary' : ''}`}
-      >
-        Get Started
-      </Link>
     </motion.div>
   );
 }
@@ -405,7 +362,7 @@ export default function Platform() {
             transition={{ duration: 0.45, delay: 0, ease: EASE }}
           >
             <span className="plat-eyebrow-dot" />
-            Platform
+            School
           </motion.div>
 
           <motion.h1
@@ -414,8 +371,8 @@ export default function Platform() {
             animate={heroInView ? { opacity: 1, y: 0 } : {}}
             transition={{ duration: 0.55, delay: 0.10, ease: EASE }}
           >
-            Built for scale.<br />
-            <span className="plat-hero-accent">Designed for Africa.</span>
+            One system.<br />
+            <span className="plat-hero-accent">Every part of your school.</span>
           </motion.h1>
 
           <motion.p
@@ -424,7 +381,7 @@ export default function Platform() {
             animate={heroInView ? { opacity: 1, y: 0 } : {}}
             transition={{ duration: 0.50, delay: 0.20, ease: EASE }}
           >
-            A full-stack multi-tenant SaaS — mobile app, admin dashboards, and a hardened backend — all running on Africa-region infrastructure.
+            Administration, academics, attendance, students, teachers, communication, and reporting — a complete 360° school management system built for scale, running on Africa-region infrastructure.
           </motion.p>
         </div>
       </section>
@@ -444,7 +401,7 @@ export default function Platform() {
               </div>
               <h2 className="plat-heading">
                 The infrastructure<br />
-                <span className="plat-heading-light">behind the platform.</span>
+                <span className="plat-heading-light">behind your school.</span>
               </h2>
             </motion.div>
             <motion.p
@@ -453,7 +410,7 @@ export default function Platform() {
               animate={stackInView ? { opacity: 1, y: 0 } : {}}
               transition={{ duration: 0.55, delay: 0.10, ease: EASE }}
             >
-              Every layer chosen for reliability, security, and Africa-first performance.
+              Every layer chosen for reliability, security, and Africa-first performance — powering administration, academics, and attendance alike.
             </motion.p>
           </div>
 
@@ -463,37 +420,51 @@ export default function Platform() {
         </div>
       </section>
 
-      {/* ══ PRICING ══ */}
+      {/* ══ PRICING BANNER ══ */}
       <section className="pricing-section" aria-label="Pricing">
         <div className="plat-inner plat-inner--border" ref={pricingRef}>
-          <div className="plat-header">
-            <motion.div
-              initial={{ opacity: 0, y: 24 }}
-              animate={pricingInView ? { opacity: 1, y: 0 } : {}}
-              transition={{ duration: 0.55, delay: 0, ease: EASE }}
-            >
-              <div className="plat-eyebrow">
+          <motion.div
+            initial={{ opacity: 0, y: 24 }}
+            animate={pricingInView ? { opacity: 1, y: 0 } : {}}
+            transition={{ duration: 0.55, ease: EASE }}
+            style={{
+              borderRadius: 20,
+              background: T.dark,
+              padding: 'clamp(32px, 5vw, 48px)',
+              display: 'flex',
+              flexWrap: 'wrap',
+              alignItems: 'center',
+              justifyContent: 'space-between',
+              gap: 24,
+            }}
+          >
+            <div>
+              <div className="plat-eyebrow" style={{ color: T.teal }}>
                 <span className="plat-eyebrow-dot" />
                 Plans
               </div>
-              <h2 className="plat-heading">
-                Simple, school-friendly<br />
-                <span className="plat-heading-light">pricing.</span>
+              <h2 style={{
+                fontFamily: MELODY, fontSize: 'clamp(24px, 3vw, 34px)', fontWeight: 800,
+                letterSpacing: '-0.035em', color: '#fff', margin: '0 0 8px',
+              }}>
+                3 months free, then $200/mo per school.
               </h2>
-            </motion.div>
-            <motion.p
-              className="plat-tagline"
-              initial={{ opacity: 0, y: 24 }}
-              animate={pricingInView ? { opacity: 1, y: 0 } : {}}
-              transition={{ duration: 0.55, delay: 0.10, ease: EASE }}
+              <p style={{ fontSize: 14, color: 'rgba(255,255,255,0.65)', margin: 0, maxWidth: 460, lineHeight: 1.6 }}>
+                One flat plan covers administration, admissions, academics, attendance, students, staff, fees, communication, and reporting.
+              </p>
+            </div>
+            <Link
+              to="/pricing"
+              style={{
+                display: 'inline-flex', alignItems: 'center', gap: 8,
+                background: T.teal, color: '#fff', padding: '14px 24px', borderRadius: 12,
+                textDecoration: 'none', fontWeight: 600, fontSize: 14.5, letterSpacing: '-0.01em',
+                whiteSpace: 'nowrap',
+              }}
             >
-              All plans include the mobile app, admin dashboard, and full support.
-            </motion.p>
-          </div>
-
-          <div className="pricing-grid">
-            {TIERS.map((t, i) => <PricingCard key={t.name} t={t} index={i} />)}
-          </div>
+              See full pricing
+            </Link>
+          </motion.div>
         </div>
       </section>
 

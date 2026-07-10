@@ -19,11 +19,17 @@ export const FAQS = [
   { q: 'How does attendance verification work?',   a: 'Teachers open the app and pass up to four simultaneous checks: WiFi network match, GPS radius check, unique QR code scan, and live selfie capture — all in under 10 seconds.' },
   { q: 'Can schools use WiFi-only mode?',           a: 'Yes. School admins can independently enable or disable WiFi and QR attendance modes from the settings panel. At least one mode must remain active at all times.' },
   { q: 'How does QR attendance work?',             a: 'The school admin generates a time-limited QR session (1–60 minutes) from the dashboard. Teachers scan it with their camera, capture a live selfie, and attendance is recorded instantly.' },
+  { q: 'How does RFID attendance work for students?', a: 'Each student is issued an RFID card linked to their profile. A tap at the gate or classroom reader logs the exact time instantly — no app, no manual marking, and it feeds the same real-time dashboard as staff attendance.' },
   { q: 'Does the app work on iPhone?',             a: 'Yes. The app is built with Expo and works on iOS and Android. Available on the App Store and Google Play — direct APK distribution is also available for Android without the Play Store.' },
   { q: 'Is teacher GPS location continuously tracked?', a: "No. GPS is sampled only at the moment of check-in to confirm the teacher is within the school's configured radius. Location is never stored or tracked beyond that single verification." },
   { q: 'Can multiple schools use the same platform?', a: 'Yes. The platform is fully multi-tenant. Each school has isolated data, its own admin, and its own subscription plan. A Super Admin oversees all schools from one platform dashboard.' },
   { q: 'What happens if a teacher changes device?', a: 'The teacher notifies their school admin, who resets the device session from the dashboard. On next login from the new device, a new device ID is registered automatically.' },
-  { q: 'Is there a trial period?',                 a: 'Request a demo and our team will onboard your school within 48 hours with a full trial. Contact us via the form above or email info@teacherattendance.com.' },
+  { q: 'Is there a trial period?',                 a: 'Yes — every school gets a 3-month free trial of the full platform. After that, it\'s a flat $200/month per school. See the Pricing page for details.' },
+  { q: 'Can I manage admissions and inquiries on the platform?', a: 'Yes. Parent inquiries and admission leads are tracked through a guided workflow, with follow-up reminders, right through to enrollment.' },
+  { q: 'Does the platform handle fee collection?', a: 'Yes. Schools can set up fee structures, accept online payments, auto-generate invoices, send reminders, and track outstanding balances per student.' },
+  { q: 'How does student safety tracking work?',   a: 'RFID cards log every entry and exit at the gate. Parents get an instant push or SMS notification when their child arrives, leaves, or is flagged for a late arrival or early departure.' },
+  { q: 'What makes this a full 360° school management system?', a: 'One dashboard runs admissions, academics, staff and student attendance (GPS, WiFi, QR, RFID), fees, exams, parent communication, and reporting — replacing a stack of disconnected spreadsheets and tools with a single connected platform.' },
+  { q: 'Does the platform manage more than attendance?', a: 'Yes. TeacherAttendance is a complete 360° school management system covering administration, admissions, academics, attendance, student management, staff management, fees, communication, and reporting.' },
 ];
 
 export function FaqItem({ q, a, index }) {

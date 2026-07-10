@@ -16,9 +16,9 @@ const MELODY = "'Melody', 'Inter', sans-serif";
 const INTER  = "'Inter', -apple-system, BlinkMacSystemFont, sans-serif";
 
 const STATS = [
+  { num: '360°',  label: 'School management' },
   { num: '99.9%', label: 'Uptime SLA' },
-  { num: '4×',    label: 'Verify layers' },
-  { num: '0',     label: 'Proxy attempts pass' },
+  { num: '9+',    label: 'Core modules' },
 ];
 
 export default function Hero() {
@@ -269,9 +269,8 @@ export default function Hero() {
           >
 
             <motion.h1 className="hero-h1" variants={fadeUp} custom={1}>
-              Attendance<br />
-              that{' '}
-              <span style={{ color: T.teal }}>trusts</span>
+              Run your<br />
+              whole <span style={{ color: T.teal }}>school</span>
               <br />
               <span style={{
                 fontWeight: 300,
@@ -279,22 +278,22 @@ export default function Hero() {
                 color: T.mid,
                 letterSpacing: '-0.02em',
               }}>
-                schools.
+                in one place.
               </span>
             </motion.h1>
 
             <motion.p className="hero-sub" variants={fadeUp} custom={2}>
-              GPS, WiFi, QR, and live selfie verification —
-              all four layers working together. Eliminate proxy
-              attendance and get accurate records instantly.
+              The complete 360° school management system —
+              admissions, administration, academics, attendance, students,
+              staff, fees, communication, and reporting, all working together.
             </motion.p>
 
             <motion.div className="hero-ctas" variants={fadeUp} custom={3}>
-              <Link to="/request-demo" className="hero-cta-primary">
+              <Link to="/contact" className="hero-cta-primary">
                 Request a demo
                 <ArrowRight size={16} strokeWidth={2.5} />
               </Link>
-              <Link to="/features" className="hero-cta-secondary">
+              <Link to="/platform" className="hero-cta-secondary">
                 See how it works
                 <ChevronRight size={15} strokeWidth={2.5} />
               </Link>

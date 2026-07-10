@@ -421,7 +421,7 @@ export default function FeaturesPage() {
             transition={{ duration: 0.45, delay: 0, ease: EASE }}
           >
             <span className="fp-eyebrow-dot" />
-            Platform Features
+            Staff & Teachers
           </motion.div>
 
           <motion.h1
@@ -430,8 +430,8 @@ export default function FeaturesPage() {
             animate={heroInView ? { opacity: 1, y: 0 } : {}}
             transition={{ duration: 0.55, delay: 0.10, ease: EASE }}
           >
-            Every layer closes a<br />
-            <span className="fp-hero-accent">different fraud loophole.</span>
+            Staff attendance,<br />
+            <span className="fp-hero-accent">verified and airtight.</span>
           </motion.h1>
 
           <motion.p
@@ -440,7 +440,7 @@ export default function FeaturesPage() {
             animate={heroInView ? { opacity: 1, y: 0 } : {}}
             transition={{ duration: 0.50, delay: 0.20, ease: EASE }}
           >
-            TeacherAttendance uses four simultaneous verification methods — so no single failure point can be exploited.
+            The staff attendance module of your school management system — four simultaneous verification methods so attendance can't be faked, and staff records stay accurate.
           </motion.p>
 
         </div>

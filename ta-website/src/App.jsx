@@ -6,6 +6,8 @@ import Footer from './components/Footer';
 import Home          from './pages/Home';
 import Platform      from './pages/Platform';
 import FeaturesPage  from './pages/FeaturesPage';
+import StudentsPage  from './pages/StudentsPage';
+import PricingPage   from './pages/PricingPage';
 import HowItWorksPage from './pages/HowItWorksPage';
 import ProductPage   from './pages/ProductPage';
 import AboutUs       from './pages/AboutUs';
@@ -30,8 +32,10 @@ export default function App() {
       <main id="main-content">
         <Routes>
           <Route path="/"                   element={<Home />} />
-          <Route path="/platform"           element={<Platform />} />
-          <Route path="/features"           element={<FeaturesPage />} />
+          <Route path="/schools"           element={<Platform />} />
+          <Route path="/teachers"           element={<FeaturesPage />} />
+          <Route path="/students"           element={<StudentsPage />} />
+          <Route path="/pricing"            element={<PricingPage />} />
           <Route path="/how-it-works"       element={<HowItWorksPage />} />
           {/* <Route path="/product"            element={<ProductPage />} /> */}
           <Route path="/about-us"           element={<AboutUs />} />

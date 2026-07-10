@@ -206,7 +206,7 @@ export default function Features() {
           >
             <div className="feat-eyebrow">
               <span className="feat-eyebrow-dot" />
-              Platform features
+              Teacher & attendance module
             </div>
             <h2 className="feat-heading">
               Every layer<br />
@@ -220,7 +220,7 @@ export default function Features() {
             animate={inView ? { opacity: 1, y: 0 } : {}}
             transition={{ duration: 0.55, delay: 0.10, ease: EASE }}
           >
-            Each feature independently eliminates a different attendance fraud vector — together they're airtight.
+            One module inside the full school management system — each feature independently eliminates a different attendance fraud vector.
           </motion.p>
         </div>
 

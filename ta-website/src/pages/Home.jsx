@@ -1,5 +1,6 @@
 import Hero        from '../sections/Hero';
 import Stats       from '../sections/Stats';
+import Modules     from '../sections/Modules';
 import Features    from '../sections/Features';
 import HowItWorks  from '../sections/HowItWorks';
 import WhyChoose   from '../sections/WhyChoose';
@@ -13,6 +14,7 @@ export default function Home() {
     <>
       <Hero/>
       <Stats/>
+      <Modules/>
       <Features/>
       <HowItWorks/>
       <WhyChoose/>

@@ -17,10 +17,10 @@ const EASE   = [0.22, 1, 0.36, 1];
 
 export const FAQS = [
   { q: 'How does attendance verification work?',    a: 'Teachers open the app and pass up to four simultaneous checks: WiFi network match, GPS radius check, unique QR code scan, and live selfie capture — all in under 10 seconds.' },
-  { q: 'Can schools use WiFi-only mode?',           a: 'Yes. School admins can independently enable or disable WiFi and QR attendance modes from the settings panel. At least one mode must remain active at all times.' },
-  { q: 'How does QR attendance work?',              a: 'The school admin generates a time-limited QR session (1–60 minutes) from the dashboard. Teachers scan it with their camera, capture a live selfie, and attendance is recorded instantly.' },
+  { q: 'How does RFID attendance work for students?', a: 'Each student carries an RFID card. A tap at the gate or classroom reader logs the exact time instantly — no app, no manual marking — and shows up live on the admin dashboard.' },
+   { q: 'How does QR attendance work?',              a: 'The school admin generates a time-limited QR session (1–60 minutes) from the dashboard. Teachers scan it with their camera, capture a live selfie, and attendance is recorded instantly.' },
    { q: 'Is teacher GPS location continuously tracked?', a: "No. GPS is sampled only at the moment of check-in to confirm the teacher is within the school's configured radius. Location is never stored or tracked beyond that single verification." },
-  { q: 'Can multiple schools use the same platform?',   a: 'Yes. The platform is fully multi-tenant. Each school has isolated data, its own admin, and its own subscription plan. A Super Admin oversees all schools from one platform dashboard.' },
+   { q: 'Is there a free trial?',                        a: 'Yes — every school gets a 3-month free trial of the full platform. After that, it\'s a flat $200/month per school with no setup fees.' },
   ];
 
 /* ── Individual FAQ item ── */

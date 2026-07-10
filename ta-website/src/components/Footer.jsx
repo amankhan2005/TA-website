@@ -13,11 +13,15 @@ const T = {
 const MELODY = "'Melody', 'Inter', sans-serif";
 const INTER  = "'Inter', -apple-system, BlinkMacSystemFont, sans-serif";
 
+const SCHOOL_LOGIN_URL = 'https://teacherattendance.com/schooladmin';
+
 const COLS = {
-  Product: [
-    { label: 'Features',     to: '/features'     },
-    { label: 'How It Works', to: '/how-it-works'  },
+  Platform: [
     { label: 'Platform',     to: '/platform'      },
+    { label: 'Features',     to: '/features'      },
+    { label: 'Students',     to: '/students'      },
+    { label: 'Pricing',      to: '/pricing'        },
+    { label: 'How It Works', to: '/how-it-works'  },
     { label: 'Download App', to: '/download-app'  },
   ],
   Company: [
@@ -231,7 +235,7 @@ export default function Footer() {
                 <span className="footer__logo-text">TeacherAttendance</span>
               </Link>
               <p className="footer__desc">
-                Smart, secure teacher attendance for modern schools. GPS, WiFi, QR, and selfie verified.
+                The complete 360° school management system — administration, admissions, academics, attendance, students, staff, fees, communication, and reporting.
               </p>
               <p className="footer__tagline">"Every Check-In, Every Day Counts"</p>
               <div className="footer__socials">
@@ -265,6 +269,10 @@ export default function Footer() {
             </p>
 
             <div className="footer__bottom-right">
+              <a href={SCHOOL_LOGIN_URL} className="footer__email">
+                School Login
+              </a>
+              <span className="footer__credit-dot" />
               <a href="mailto:info@teacherattendance.com" className="footer__email">
                 info@teacherattendance.com
               </a>

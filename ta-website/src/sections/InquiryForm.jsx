@@ -19,7 +19,7 @@ const EASE   = [0.22, 1, 0.36, 1];
 /* ── API logic — unchanged ── */
 const API_BASE  = import.meta.env.VITE_API_URL || 'https://api.teacherattendance.com';
 export const COUNTRIES = ['Kenya','Uganda','Tanzania','Rwanda','Ethiopia','Nigeria','Ghana','South Africa','Zambia','Zimbabwe','Mozambique','Malawi','Other'];
-export const T_RANGES  = ['1–20 teachers','21–60 teachers','61–200 teachers','200+ teachers'];
+export const T_RANGES  = ['1–20 staff','21–60 staff','61–200 staff','200+ staff'];
 export const INIT_FORM = { schoolName:'', contactPerson:'', email:'', phone:'', country:'', teacherCount:'', message:'' };
 
 export function validate(form) {
@@ -29,7 +29,7 @@ export function validate(form) {
   if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(form.email)) e.email = 'Please enter a valid email address';
   if (!form.phone.trim())         e.phone         = 'Phone number is required';
   if (!form.country)              e.country       = 'Please select your country';
-  if (!form.teacherCount)         e.teacherCount  = 'Please select teacher count';
+  if (!form.teacherCount)         e.teacherCount  = 'Please select staff count';
   return e;
 }
 
@@ -48,7 +48,7 @@ export async function submitInquiry(form) {
 
 /* ── Trust items ── */
 const TRUST_ITEMS = [
-  { icon: Scale,      title: 'Any school size',      sub: '10 to 500+ teachers — platform scales with you'  },
+  { icon: Scale,      title: 'Any school size',      sub: '10 to 500+ staff — platform scales with you'  },
   { icon: Clock,      title: 'Setup in 48 hours',    sub: 'Our team onboards your school within two days'    },
   { icon: Shield,     title: 'Data stays in Africa', sub: 'MongoDB Atlas Africa region — data sovereignty'   },
   { icon: Smartphone, title: 'APK distribution',     sub: 'No App Store required for Android deployment'     },
@@ -111,7 +111,7 @@ export function DemoFormCard({ compact = false }) {
             <div className="iq-success__next">
               <p className="iq-success__next-label">What happens next?</p>
               <div className="iq-success__steps">
-                {['Demo call scheduled within 24 hours','School account created in 48 hours','Teachers onboarded with the app','Live attendance from day one'].map(s => (
+                {['Demo call scheduled within 24 hours','School account created in 48 hours','Staff onboarded with the app','Live attendance from day one'].map(s => (
                   <div key={s} className="iq-success__step">
                     <span className="iq-success__step-dot" />
                     {s}
@@ -158,7 +158,7 @@ export function DemoFormCard({ compact = false }) {
                     {COUNTRIES.map(c => <option key={c} value={c}>{c}</option>)}
                   </select>
                 </FormField>
-                <FormField id="teacherCount" label="Number of Teachers" required error={errs.teacherCount}>
+                <FormField id="teacherCount" label="Number of Staff / Teachers" required error={errs.teacherCount}>
                   <select id="teacherCount" className={`iq-input${errs.teacherCount ? ' iq-input--err' : ''}`}
                     value={form.teacherCount} onChange={set('teacherCount')}>
                     <option value="">Select range</option>
@@ -168,7 +168,7 @@ export function DemoFormCard({ compact = false }) {
               </div>
               <FormField id="message" label="Message / Requirements">
                 <textarea id="message" className="iq-input iq-textarea"
-                  placeholder="Tell us about your school's attendance challenges…"
+                  placeholder="Tell us about your school's needs…"
                   value={form.message} onChange={set('message')} />
               </FormField>
             </div>

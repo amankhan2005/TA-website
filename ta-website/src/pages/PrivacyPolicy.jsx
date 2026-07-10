@@ -17,8 +17,10 @@ const SECTIONS = [
     content: `We collect information necessary to operate the TeacherAttendance platform:
 
 • **Account Information:** School name, admin name, email address, and phone number provided during registration.
-• **Teacher Data:** Teacher names, email addresses, and device identifiers registered by school administrators.
-• **Attendance Records:** Check-in timestamps, GPS coordinates (captured at the moment of check-in only), WiFi network identifiers, and selfie images.
+• **Staff Data:** Teacher and staff names, email addresses, and device identifiers registered by school administrators.
+• **Student Data:** Student names, guardian contact details, RFID card identifiers, academic records, and enrollment or admission-inquiry information provided by the school.
+• **Attendance Records:** Check-in/check-out timestamps, GPS coordinates (captured at the moment of check-in only), WiFi network identifiers, RFID taps, and selfie images.
+• **Fee & Payment Information:** Fee structures, invoices, and payment status recorded by the school. We do not store full payment card details; payments are processed through PCI-compliant third-party providers.
 • **Device Information:** Device ID, operating system version, and app version for security and support purposes.
 • **Audit Logs:** All platform actions are logged with IP addresses and timestamps for security and accountability.`
   },
@@ -41,9 +43,9 @@ Data is retained for a maximum of 365 days for audit logs and attendance records
   },
   {
     title: '4. GPS & Location Data',
-    content: `We capture GPS coordinates only at the moment of attendance check-in. Location is used solely to verify that the teacher is within the school's configured radius. We do not:
+    content: `We capture GPS coordinates only at the moment of attendance check-in. Location is used solely to verify that the staff member is within the school's configured radius. We do not:
 
-• Track teacher location continuously
+• Track staff or student location continuously
 • Store location history beyond the check-in record
 • Share location data with third parties
 
@@ -53,8 +55,8 @@ The GPS radius is configured by each school administrator and is used only for o
     title: '5. Data Sharing',
     content: `We do not sell, rent, or share personal data with third parties for marketing purposes. We may share data with:
 
-• **Within your school:** School administrators can view all data for teachers under their account.
-• **Super Administrators:** Platform operators can view aggregated analytics (not personal teacher data) for system management.
+• **Within your school:** School administrators can view all data for staff and students under their account.
+• **Super Administrators:** Platform operators can view aggregated analytics (not personal staff or student data) for system management.
 • **Legal obligations:** We may disclose data if required by law or to prevent fraud and abuse.`
   },
   {
@@ -63,7 +65,7 @@ The GPS radius is configured by each school administrator and is used only for o
   },
   {
     title: '7. Your Rights',
-    content: `You have the right to access your personal data, request corrections, and request deletion (subject to legal retention requirements). To exercise these rights, contact info@teacherattendance.com. School administrators can delete teacher accounts directly from the dashboard.`
+    content: `You have the right to access your personal data, request corrections, and request deletion (subject to legal retention requirements). To exercise these rights, contact info@teacherattendance.com. School administrators can delete staff or student accounts directly from the dashboard.`
   },
   {
     title: '8. Changes to This Policy',

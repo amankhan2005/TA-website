@@ -5,11 +5,13 @@ import { Menu, X } from 'lucide-react';
 import logo from '../assets/logo.png';
 
 const NAV = [
-  { label: 'Platform',     href: '/platform'     },
-  { label: 'Features',     href: '/features'     },
-  { label: 'How It Works', href: '/how-it-works' },
-  { label: 'About Us',     href: '/about-us'     },
-  ];
+  { label: 'Schools',  href: '/schools' },
+  { label: 'Teachers',  href: '/teachers' },
+  { label: 'Students',  href: '/students' },
+  { label: 'Pricing',   href: '/pricing' },
+];
+
+const SCHOOL_LOGIN_URL = 'https://teachertattendance.netlify.app/schooladmin';
 
 const T = {
   teal:     '#0DB9AC',
@@ -227,6 +229,35 @@ export default function Navbar() {
             >
               Contact Us
             </Link>
+
+            <a
+              href={SCHOOL_LOGIN_URL}
+              style={{
+                display: 'inline-flex',
+                alignItems: 'center',
+                padding: '7px 16px',
+                borderRadius: '9px',
+                fontSize: '13.5px',
+                fontWeight: 500,
+                color: T.dark,
+                textDecoration: 'none',
+                border: '0.5px solid rgba(0,0,0,.13)',
+                background: 'transparent',
+                letterSpacing: '-0.01em',
+                whiteSpace: 'nowrap',
+                transition: 'background .15s, border-color .15s',
+              }}
+              onMouseEnter={e => {
+                e.currentTarget.style.background = 'rgba(0,0,0,.04)';
+                e.currentTarget.style.borderColor = 'rgba(0,0,0,.2)';
+              }}
+              onMouseLeave={e => {
+                e.currentTarget.style.background = 'transparent';
+                e.currentTarget.style.borderColor = 'rgba(0,0,0,.13)';
+              }}
+            >
+              School Login
+            </a>
 
             <Link
               to="/download-app"
@@ -453,6 +484,26 @@ export default function Navbar() {
                 >
                   Contact Us
                 </Link>
+                <a
+                  href={SCHOOL_LOGIN_URL}
+                  style={{
+                    display: 'flex',
+                    alignItems: 'center',
+                    justifyContent: 'center',
+                    padding: '13px 16px',
+                    borderRadius: '12px',
+                    fontSize: '15px',
+                    fontWeight: 500,
+                    color: T.dark,
+                    textDecoration: 'none',
+                    border: '0.5px solid rgba(0,0,0,.13)',
+                    background: 'transparent',
+                    letterSpacing: '-0.01em',
+                    minHeight: '48px',
+                  }}
+                >
+                  School Login
+                </a>
                 <Link
                   to="/download-app"
                   style={{

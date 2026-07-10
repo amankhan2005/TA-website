@@ -244,7 +244,7 @@ export default function FinalCTA() {
                 transition={{ duration: 0.55, delay: 0.18, ease: EASE }}
               >
                 Modernize your<br />
-                <span className="cta-heading-light">teacher attendance.</span>
+                <span className="cta-heading-light">whole school.</span>
               </motion.h2>
 
               <motion.p
@@ -253,7 +253,7 @@ export default function FinalCTA() {
                 animate={inView ? { opacity: 1, y: 0 } : {}}
                 transition={{ duration: 0.50, delay: 0.26, ease: EASE }}
               >
-                Join schools across Kenya using GPS, WiFi, QR, and selfie-verified attendance.
+                Join schools across Kenya using one system for administration, admissions, academics, attendance, students, staff, and fees.
               </motion.p>
             </div>
           </div>
@@ -288,7 +288,7 @@ export default function FinalCTA() {
               </Link>
             </motion.div>
 
-            <p className="cta-note">Our team responds within 24 hours · No commitment required</p>
+            <p className="cta-note">3-month free trial · Our team responds within 24 hours</p>
           </motion.div>
 
         </motion.div>

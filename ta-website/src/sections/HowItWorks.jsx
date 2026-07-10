@@ -18,7 +18,7 @@ const INTER  = "'Inter', -apple-system, BlinkMacSystemFont, sans-serif";
 const EASE   = [0.22, 1, 0.36, 1];
 
 const STEPS = [
-  { num: '01', icon: LogIn,       title: 'Teacher Arrives at School',    desc: "Opens the TeacherAttendance app on their registered device and taps 'Mark Attendance'.", tag: 'Under 10 seconds'    },
+  { num: '01', icon: LogIn,       title: 'Staff Member Arrives at School', desc: "Opens the TeacherAttendance app on their registered device and taps 'Mark Attendance'.", tag: 'Under 10 seconds'    },
   { num: '02', icon: Radio,       title: 'Network Automatically Detected', desc: 'App detects school WiFi SSID and gateway IP. Only authorized networks are accepted.',          tag: 'WiFi validated'       },
   { num: '03', icon: ShieldCheck, title: 'Multi-Layer Verification',      desc: 'GPS radius, WiFi match, device ID, and QR/selfie verified simultaneously in real time.',        tag: '4-layer anti-fraud'   },
   { num: '04', icon: BadgeCheck,  title: 'Attendance Confirmed',          desc: 'Verified and recorded instantly. Duplicate protection prevents multiple check-ins per day.',     tag: 'Instant recording'    },

@@ -18,7 +18,7 @@ const EASE   = [0.22, 1, 0.36, 1];
 /* ── Data ── */
 const ROLES = [
   {
-    role:    'Teacher',
+    role:    'Staff / Teacher',
     eyebrow: 'Mobile app flow',
     color:   '#6366F1',
     steps: [
@@ -37,7 +37,7 @@ const ROLES = [
       'Log into admin dashboard',
       'Generate QR session (1–60 min)',
       'Monitor live check-ins',
-      'Review flagged teachers',
+      'Review flagged staff',
       'Download monthly reports',
     ],
   },
@@ -329,7 +329,7 @@ export default function HowItWorksPage() {
             animate={heroInView ? { opacity: 1, y: 0 } : {}}
             transition={{ duration: 0.50, delay: 0.20, ease: EASE }}
           >
-            A five-step process — from teacher arrival to admin dashboard — with zero manual effort.
+            A five-step process — from staff arrival to admin dashboard — with zero manual effort.
           </motion.p>
 
         </div>

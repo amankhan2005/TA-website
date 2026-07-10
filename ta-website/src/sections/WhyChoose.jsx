@@ -15,12 +15,12 @@ const INTER  = "'Inter', -apple-system, BlinkMacSystemFont, sans-serif";
 const EASE   = [0.22, 1, 0.36, 1];
 
 const WHY = [
+  { icon: Building2,   title: 'One System, Whole School',  desc: 'Administration, admissions, academics, attendance, students, staff, and fees — no more juggling spreadsheets and separate tools.' },
   { icon: ShieldCheck, title: 'Zero Proxy Attendance',     desc: 'GPS + WiFi + selfie + device ID — four layers that cannot simultaneously be faked by any teacher.' },
-  { icon: Zap,         title: 'Real-Time Monitoring',      desc: 'Dashboard auto-refreshes. See attendance the instant it happens — not at end of day.' },
+  { icon: Zap,         title: 'Real-Time Monitoring',      desc: 'Dashboards auto-refresh across every module. See what\'s happening in your school the instant it happens.' },
   { icon: Lock,        title: 'Enterprise-Grade Security', desc: 'bcrypt, JWT, rate limiting, helmet.js security headers, and immutable audit logs built in.' },
   { icon: Smartphone,  title: 'iOS & Android Native',      desc: 'Built with Expo — works on all modern iPhones and Android phones. APK direct distribution available.' },
-  { icon: Building2,   title: 'Multi-School Ready',        desc: 'One Super Admin manages unlimited schools with isolated data and separate subscription plans.' },
-  { icon: BarChart3,   title: 'Actionable Analytics',      desc: 'Monthly trends, per-teacher breakdown, suspicious activity reports, and CSV data exports.' },
+  { icon: BarChart3,   title: 'Actionable Analytics',      desc: 'School-wide trends, attendance, fee, and academic reports, with CSV exports for every module.' },
 ];
 
 
@@ -204,7 +204,7 @@ export default function WhyChoose() {
             </div>
             <h2 className="why-heading">
               Built for<br />
-              <span className="why-heading-light">accountability.</span>
+              <span className="why-heading-light">whole-school accountability.</span>
             </h2>
           </motion.div>
 
@@ -214,7 +214,7 @@ export default function WhyChoose() {
             animate={inView ? { opacity: 1, y: 0 } : {}}
             transition={{ duration: 0.55, delay: 0.10, ease: EASE }}
           >
-            Every design decision was made to give administrators accurate, tamper-proof attendance data.
+            Every design decision was made to give administrators accurate, real-time data across the entire school.
           </motion.p>
         </div>
 
