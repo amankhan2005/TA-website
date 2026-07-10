@@ -370,7 +370,7 @@ export default function DownloadApp() {
             >
               <img
                 src={heroDashboard}
-                alt="TeacherAttendance dashboard preview"
+                alt="liberiaschoolhub.com dashboard preview"
                 className="da-dashboard-img"
               />
             </motion.div>

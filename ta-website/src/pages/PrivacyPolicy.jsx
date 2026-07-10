@@ -14,7 +14,7 @@ const EASE   = [0.22, 1, 0.36, 1];
 const SECTIONS = [
   {
     title: '1. Information We Collect',
-    content: `We collect information necessary to operate the TeacherAttendance platform:
+    content: `We collect information necessary to operate the liberiaschoolhub.com platform:
 
 • **Account Information:** School name, admin name, email address, and phone number provided during registration.
 • **Staff Data:** Teacher and staff names, email addresses, and device identifiers registered by school administrators.
@@ -65,7 +65,7 @@ The GPS radius is configured by each school administrator and is used only for o
   },
   {
     title: '7. Your Rights',
-    content: `You have the right to access your personal data, request corrections, and request deletion (subject to legal retention requirements). To exercise these rights, contact info@teacherattendance.com. School administrators can delete staff or student accounts directly from the dashboard.`
+    content: `You have the right to access your personal data, request corrections, and request deletion (subject to legal retention requirements). To exercise these rights, contact info@liberiaschoolhub.com.com. School administrators can delete staff or student accounts directly from the dashboard.`
   },
   {
     title: '8. Changes to This Policy',
@@ -73,7 +73,7 @@ The GPS radius is configured by each school administrator and is used only for o
   },
   {
     title: '9. Contact',
-    content: `For privacy-related questions, contact us at: info@teacherattendance.com`
+    content: `For privacy-related questions, contact us at: info@liberiaschoolhub.com.com`
   },
 ];
 

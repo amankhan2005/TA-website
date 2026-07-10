@@ -29,7 +29,7 @@ export const FAQS = [
   { q: 'Does the platform handle fee collection?', a: 'Yes. Schools can set up fee structures, accept online payments, auto-generate invoices, send reminders, and track outstanding balances per student.' },
   { q: 'How does student safety tracking work?',   a: 'RFID cards log every entry and exit at the gate. Parents get an instant push or SMS notification when their child arrives, leaves, or is flagged for a late arrival or early departure.' },
   { q: 'What makes this a full 360° school management system?', a: 'One dashboard runs admissions, academics, staff and student attendance (GPS, WiFi, QR, RFID), fees, exams, parent communication, and reporting — replacing a stack of disconnected spreadsheets and tools with a single connected platform.' },
-  { q: 'Does the platform manage more than attendance?', a: 'Yes. TeacherAttendance is a complete 360° school management system covering administration, admissions, academics, attendance, student management, staff management, fees, communication, and reporting.' },
+  { q: 'Does the platform manage more than attendance?', a: 'Yes. liberiaschoolhub.com is a complete 360° school management system covering administration, admissions, academics, attendance, student management, staff management, fees, communication, and reporting.' },
 ];
 
 export function FaqItem({ q, a, index }) {
@@ -206,7 +206,7 @@ export default function FAQ() {
                 color: T.mid,
                 margin: 0,
               }}>
-                Everything you need to know about TeacherAttendance.
+                Everything you need to know about liberiaschoolhub.com.
               </p>
             </motion.div>
 

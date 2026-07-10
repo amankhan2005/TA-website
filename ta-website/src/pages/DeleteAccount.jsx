@@ -14,7 +14,7 @@ const INTER  = "'Inter', -apple-system, BlinkMacSystemFont, sans-serif";
 const EASE   = [0.22, 1, 0.36, 1];
 
 const STEPS = [
-  { num: '01', icon: Smartphone, title: 'Open the App',            desc: 'Launch the TeacherAttendance app and log in to your account.' },
+  { num: '01', icon: Smartphone, title: 'Open the App',            desc: 'Launch the liberiaschoolhub.com app and log in to your account.' },
   { num: '02', icon: UserCheck,  title: 'Go to Profile Section',   desc: 'Navigate to your profile from the main menu.' },
   { num: '03', icon: Trash2,     title: 'Tap Delete Account',      desc: 'Click on "Delete Request Account" to submit your request.' },
   { num: '04', icon: Mail,       title: 'Confirmation from Team',  desc: 'Our team may contact you to confirm the request was intentional.' },
@@ -393,7 +393,7 @@ export default function DeleteAccount() {
             transition={{ duration: 0.55, delay: 0.10, ease: EASE }}
           >
             Delete Account<br />
-            <span className="dac-hero-accent">TeacherAttendance</span>
+            <span className="dac-hero-accent">liberiaschoolhub.com</span>
           </motion.h1>
 
           <motion.p
@@ -526,7 +526,7 @@ export default function DeleteAccount() {
                   <div className="dac-contact-note__title">Need help?</div>
                   <div className="dac-contact-note__sub">
                     Contact our support team at{' '}
-                    <a href="mailto:info@teacherattendance.com">info@teacherattendance.com</a>
+                    <a href="mailto:info@liberiaschoolhub.com.com">info@liberiaschoolhub.com.com</a>
                   </div>
                 </div>
               </motion.div>

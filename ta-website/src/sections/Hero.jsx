@@ -293,7 +293,7 @@ export default function Hero() {
                 Request a demo
                 <ArrowRight size={16} strokeWidth={2.5} />
               </Link>
-              <Link to="/platform" className="hero-cta-secondary">
+              <Link to="/schools" className="hero-cta-secondary">
                 See how it works
                 <ChevronRight size={15} strokeWidth={2.5} />
               </Link>
@@ -342,7 +342,7 @@ export default function Hero() {
             >
               <img
                 src={heroDashboard}
-                alt="TeacherAttendance dashboard preview"
+                alt="liberiaschoolhub.com dashboard preview"
                 style={{
                   width: '100%',
                   maxHeight: '620px',

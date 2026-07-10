@@ -9,7 +9,7 @@ function ScreenLogin() {
       <div style={{width:44,height:44,borderRadius:14,background:'#13C6B3',display:'flex',alignItems:'center',justifyContent:'center',marginBottom:4,boxShadow:'0 8px 24px rgba(19,198,179,0.4)'}}>
         <MapPin size={20} color="white" strokeWidth={2}/>
       </div>
-      <p style={{color:'#fff',fontWeight:700,fontSize:15,letterSpacing:'-0.02em'}}>TeacherAttendance</p>
+      <p style={{color:'#fff',fontWeight:700,fontSize:15,letterSpacing:'-0.02em'}}>liberiaschoolhub.com</p>
       <p style={{color:'rgba(255,255,255,0.40)',fontSize:11}}>Sign in to your account</p>
       <div style={{width:'100%',display:'flex',flexDirection:'column',gap:8,marginTop:4}}>
         {[{icon:<Mail size={12} color="rgba(255,255,255,0.45)" strokeWidth={1.5}/>, text:'teacher@school.ac.ke'},{icon:<Lock size={12} color="rgba(255,255,255,0.45)" strokeWidth={1.5}/>, text:'••••••••••'}].map((f,i) => (

@@ -28,12 +28,12 @@ export default function Footer() {
           <div>
             <div className="footer__logo">
               <div className="footer__logo-mark"><MapPin size={15} color="white" strokeWidth={2.5}/></div>
-              <span className="footer__logo-text">TeacherAttendance</span>
+              <span className="footer__logo-text">liberiaschoolhub.com</span>
             </div>
             <p className="footer__desc">Smart, secure teacher attendance for modern schools. GPS, WiFi, QR, and selfie verified.</p>
             <p className="footer__tagline">"Every Check-In, Every Day Counts"</p>
             <div className="footer__socials">
-              {[['𝕏','#'],['in','#'],['@','mailto:info@teacherattendance.com']].map(([l,h]) => (
+              {[['𝕏','#'],['in','#'],['@','mailto:info@liberiaschoolhub.com.com']].map(([l,h]) => (
                 <a key={h} href={h} className="footer__social" aria-label={l}>{l}</a>
               ))}
             </div>
@@ -48,8 +48,8 @@ export default function Footer() {
           ))}
         </div>
         <div className="footer__bottom">
-          <p className="footer__copy">© {new Date().getFullYear()} TeacherAttendance.com · All rights reserved</p>
-          <a href="mailto:info@teacherattendance.com" className="footer__email">info@teacherattendance.com</a>
+          <p className="footer__copy">© {new Date().getFullYear()} liberiaschoolhub.com.com · All rights reserved</p>
+          <a href="mailto:info@liberiaschoolhub.com.com" className="footer__email">info@liberiaschoolhub.com.com</a>
         </div>
       </div>
     </footer>

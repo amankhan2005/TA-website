@@ -57,7 +57,7 @@ export default function WhyChoose() {
     <section
       id="about"
       ref={ref}
-      aria-label="Why Choose TeacherAttendance"
+      aria-label="Why Choose liberiaschoolhub.com"
       style={{ fontFamily: INTER, background: '#F8FAFB', overflowX: 'hidden' }}
     >
       <style>{`

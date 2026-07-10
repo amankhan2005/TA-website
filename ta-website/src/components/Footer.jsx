@@ -13,7 +13,7 @@ const T = {
 const MELODY = "'Melody', 'Inter', sans-serif";
 const INTER  = "'Inter', -apple-system, BlinkMacSystemFont, sans-serif";
 
-const SCHOOL_LOGIN_URL = 'https://teacherattendance.com/schooladmin';
+const SCHOOL_LOGIN_URL = 'http://liberiaschoolhub.com/schooladmin';
 
 const COLS = {
   Platform: [
@@ -39,7 +39,7 @@ const COLS = {
 const SOCIALS = [
   { label: '𝕏',  href: '#',                                    aria: 'Twitter / X'  },
   { label: 'in', href: '#',                                    aria: 'LinkedIn'      },
-  { label: '@',  href: 'mailto:info@teacherattendance.com', aria: 'Email support' },
+  { label: '@',  href: 'mailto:info@liberiaschoolhub.com.com', aria: 'Email support' },
 ];
 
 export default function Footer() {
@@ -77,7 +77,7 @@ export default function Footer() {
           margin-bottom: 16px;
         }
         .footer__logo-img {
-          width: 38px; height: 38px;
+          width: 48px; height: 48px;
           object-fit: contain;
           flex-shrink: 0;
         }
@@ -231,8 +231,8 @@ export default function Footer() {
             {/* Brand */}
             <div>
               <Link to="/" className="footer__logo">
-                <img src={logo} alt="TeacherAttendance" className="footer__logo-img" />
-                <span className="footer__logo-text">TeacherAttendance</span>
+                <img src={logo} alt="liberiaschoolhub.com" className="footer__logo-img" />
+                <span className="footer__logo-text">liberiaschoolhub.com</span>
               </Link>
               <p className="footer__desc">
                 The complete 360° school management system — administration, admissions, academics, attendance, students, staff, fees, communication, and reporting.
@@ -265,7 +265,7 @@ export default function Footer() {
           {/* ── Bottom bar ── */}
           <div className="footer__bottom">
             <p className="footer__copy">
-              © {new Date().getFullYear()} TeacherAttendance.com · All rights reserved
+              © {new Date().getFullYear()} liberiaschoolhub.com.com · All rights reserved
             </p>
 
             <div className="footer__bottom-right">
@@ -273,8 +273,8 @@ export default function Footer() {
                 School Login
               </a>
               <span className="footer__credit-dot" />
-              <a href="mailto:info@teacherattendance.com" className="footer__email">
-                info@teacherattendance.com
+              <a href="mailto:info@liberiaschoolhub.com.com" className="footer__email">
+                info@liberiaschoolhub.com.com
               </a>
               <span className="footer__credit-dot" />
               <span className="footer__credit">

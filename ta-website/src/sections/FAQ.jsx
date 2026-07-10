@@ -314,7 +314,7 @@ export default function FAQ() {
             animate={inView ? { opacity: 1, y: 0 } : {}}
             transition={{ duration: 0.55, delay: 0.10, ease: EASE }}
           >
-            Everything you need to know about TeacherAttendance.
+            Everything you need to know about liberiaschoolhub.com.
           </motion.p>
         </div>
 

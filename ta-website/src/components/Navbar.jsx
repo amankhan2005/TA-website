@@ -11,7 +11,7 @@ const NAV = [
   { label: 'Pricing',   href: '/pricing' },
 ];
 
-const SCHOOL_LOGIN_URL = 'https://teachertattendance.netlify.app/schooladmin';
+const SCHOOL_LOGIN_URL = 'http://liberiaschoolhub.com/schooladmin';
 
 const T = {
   teal:     '#0DB9AC',
@@ -96,7 +96,7 @@ export default function Navbar() {
           {/* ── Logo + Brand name ── */}
           <Link
             to="/"
-            aria-label="TeacherAttendance home"
+            aria-label="liberiaschoolhub.com home"
             style={{
               display: 'flex',
               alignItems: 'center',
@@ -108,9 +108,9 @@ export default function Navbar() {
           >
             <img
               src={logo}
-              alt="TeacherAttendance logo"
+              alt="liberiaschoolhub.com logo"
               style={{
-                height: '30px',
+                height: '60px',
                 width: 'auto',
                 display: 'block',
                 flexShrink: 0,
@@ -126,7 +126,7 @@ export default function Navbar() {
                 lineHeight: 1,
               }}
             >
-              TeacherAttendance
+              liberia School Hub
             </span>
           </Link>
 

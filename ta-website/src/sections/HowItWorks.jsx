@@ -23,7 +23,7 @@ const EASE   = [0.22, 1, 0.36, 1];
 
 /* ── Teacher Attendance — QR / WiFi ── */
 const TEACHER_STEPS = [
-  { num: '01', icon: LogIn,          title: 'Teacher Opens the App',           desc: "Opens the TeacherAttendance app on their registered device and taps 'Mark Attendance'.", tag: 'Under 10 seconds' },
+  { num: '01', icon: LogIn,          title: 'Teacher Opens the App',           desc: "Opens the liberiaschoolhub.com app on their registered device and taps 'Mark Attendance'.", tag: 'Under 10 seconds' },
   { num: '02', icon: QrCode,         title: 'QR Code or WiFi Verification',    desc: 'Scans the campus QR code, or connects automatically over verified school WiFi.',        tag: 'Dual verification' },
   { num: '03', icon: BadgeCheck,     title: 'Attendance Recorded Instantly',   desc: 'Check-in is verified and logged the moment it happens. No duplicate entries.',          tag: 'Zero delay' },
   { num: '04', icon: BarChart3,      title: 'Admin Dashboard Updates',         desc: 'School admin sees staff check-ins live, with suspicious flags auto-highlighted.',        tag: 'Real-time dashboard' },

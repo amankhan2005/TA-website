@@ -17,7 +17,7 @@ const INTER  = "'Inter', -apple-system, BlinkMacSystemFont, sans-serif";
 const EASE   = [0.22, 1, 0.36, 1];
 
 /* ── API logic — unchanged ── */
-const API_BASE  = import.meta.env.VITE_API_URL || 'https://api.teacherattendance.com';
+const API_BASE  = import.meta.env.VITE_API_URL || 'https://api.liberiaschoolhub.com.com';
 export const COUNTRIES = ['Kenya','Uganda','Tanzania','Rwanda','Ethiopia','Nigeria','Ghana','South Africa','Zambia','Zimbabwe','Mozambique','Malawi','Other'];
 export const T_RANGES  = ['1–20 staff','21–60 staff','61–200 staff','200+ staff'];
 export const INIT_FORM = { schoolName:'', contactPerson:'', email:'', phone:'', country:'', teacherCount:'', message:'' };
@@ -552,7 +552,7 @@ export default function InquiryForm() {
               Get started
             </div>
             <h2 className="iq-heading">
-              Bring TeacherAttendance<br />
+              Bring liberiaschoolhub.com<br />
               <span className="iq-heading-light">to your school.</span>
             </h2>
           </motion.div>

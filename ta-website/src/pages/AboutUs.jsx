@@ -349,7 +349,7 @@ export default function AboutUs() {
             animate={heroInView ? { opacity: 1, y: 0 } : {}}
             transition={{ duration: 0.50, delay: 0.20, ease: EASE }}
           >
-TeacherAttendance began by solving proxy attendance fraud, and grew into a complete 360° school management system — built with the infrastructure, pricing, and design that African schools actually need.
+liberiaschoolhub.com began by solving proxy attendance fraud, and grew into a complete 360° school management system — built with the infrastructure, pricing, and design that African schools actually need.
           </motion.p>
 
         </div>
