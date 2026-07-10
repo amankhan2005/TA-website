@@ -17,8 +17,8 @@ const SCHOOL_LOGIN_URL = 'https://teacherattendance.com/schooladmin';
 
 const COLS = {
   Platform: [
-    { label: 'Platform',     to: '/platform'      },
-    { label: 'Features',     to: '/features'      },
+    { label: 'School',     to: '/schools'      },
+    { label: 'Teacher',     to: '/teachers'      },
     { label: 'Students',     to: '/students'      },
     { label: 'Pricing',      to: '/pricing'        },
     { label: 'How It Works', to: '/how-it-works'  },
