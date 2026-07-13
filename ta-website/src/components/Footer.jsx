@@ -265,7 +265,7 @@ export default function Footer() {
           {/* ── Bottom bar ── */}
           <div className="footer__bottom">
             <p className="footer__copy">
-              © {new Date().getFullYear()} liberiaschoolhub.com.com · All rights reserved
+              © {new Date().getFullYear()} liberiaschoolhub.com · All rights reserved
             </p>
 
             <div className="footer__bottom-right">
@@ -273,8 +273,8 @@ export default function Footer() {
                 School Login
               </a>
               <span className="footer__credit-dot" />
-              <a href="mailto:info@liberiaschoolhub.com.com" className="footer__email">
-                info@liberiaschoolhub.com.com
+              <a href="mailto:info@liberiaschoolhub.com" className="footer__email">
+                info@liberiaschoolhub.com
               </a>
               <span className="footer__credit-dot" />
               <span className="footer__credit">

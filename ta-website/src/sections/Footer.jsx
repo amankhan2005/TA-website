@@ -33,7 +33,7 @@ export default function Footer() {
             <p className="footer__desc">Smart, secure teacher attendance for modern schools. GPS, WiFi, QR, and selfie verified.</p>
             <p className="footer__tagline">"Every Check-In, Every Day Counts"</p>
             <div className="footer__socials">
-              {[['𝕏','#'],['in','#'],['@','mailto:info@liberiaschoolhub.com.com']].map(([l,h]) => (
+              {[['𝕏','#'],['in','#'],['@','mailto:info@liberiaschoolhub.com']].map(([l,h]) => (
                 <a key={h} href={h} className="footer__social" aria-label={l}>{l}</a>
               ))}
             </div>
