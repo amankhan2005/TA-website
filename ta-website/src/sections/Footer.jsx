@@ -48,8 +48,8 @@ export default function Footer() {
           ))}
         </div>
         <div className="footer__bottom">
-          <p className="footer__copy">© {new Date().getFullYear()} liberiaschoolhub.com.com · All rights reserved</p>
-          <a href="mailto:info@liberiaschoolhub.com.com" className="footer__email">info@liberiaschoolhub.com.com</a>
+          <p className="footer__copy">© {new Date().getFullYear()} liberiaschoolhub.com · All rights reserved</p>
+          <a href="mailto:info@liberiaschoolhub.com" className="footer__email">info@liberiaschoolhub.com</a>
         </div>
       </div>
     </footer>
